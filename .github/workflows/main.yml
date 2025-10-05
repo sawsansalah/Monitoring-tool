@@ -8,8 +8,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      USRNAME: ${{vars.DOCKERHUB_USERNAME }}
-      PASSWORD: ${{vars.PASSWORD }}
+      USRNAME: ${{ vars.DOCKERHUB_USERNAME }}
+      PASSWORD: ${{ vars.PASSWORD }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
