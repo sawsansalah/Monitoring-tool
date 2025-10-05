@@ -18,7 +18,8 @@ jobs:
         run: echo $USRNAME and $PASSWORD
 
   test:
-    runs-on: ubuntu-latest
+    #runs-on: ubuntu-latest
+    runs-on: self-hosted
     needs: build       # 👈 test waits for build
     steps:
       - name: Run tests
